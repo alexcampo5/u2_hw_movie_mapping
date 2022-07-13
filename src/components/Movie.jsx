@@ -5,7 +5,7 @@ const Movie = (props) => {
    return (
      <div>
       <h3>{props.title}</h3>
-      <h3>Release Date:{props.release_date}</h3>
+      <h3>Release Date:{props.release}</h3>
       <h3>Overview:{props.overview}</h3>
       <img src={ props.poster}/>
       {props.genres.map((genre)=>{

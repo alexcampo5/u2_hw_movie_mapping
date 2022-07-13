@@ -50,12 +50,7 @@ switch(props.name) {
 return (
   
   <div>
-  
-    // EXAMPLE of inline styling without a variable
-    {/* <p style={{ backgroundColor: 'darkslateblue', color: 'rgb(255,255,255)' }} >{props.genre}</p> */}
-
-    // EXAMPLE of inline styling WITH a variable
-    <p style={{backgroundColor: myColorVariable, color: '#000000'}} >{props.name}</p>
+  <p style={{backgroundColor: myColorVariable, color: '#000000'}} >{props.name}</p>
   </div>
 )
 }

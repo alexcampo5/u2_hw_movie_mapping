@@ -1,27 +1,24 @@
 import './styles/App.css'
-import MovieRight from './components/MovieRight'
-import MovieLeft from './components/MovieLeft'
-import MovieItem from './components/MovieItem'
+import Movie from './components/Movie'
 import moviesData from './data/moviesData.json'
 
 const App = () => {
 
   return (
     <div className="App">
-      <MovieLeft />
-      <MovieRight>  
-        <ul>
+      <h1>Film List</h1>
           {moviesData.map((movie) => (
-            <li>
-              <h2>Title: {movie.title}</h2>
-              <h4>Genre: {movie.genres.name}</h4>
-              <h4>Rating: {movies.vote_average}</h4>
-              <h4>Plot: {movies.overview}</h4>
-            </li>
+            <Movie
+              title={movie.title}
+              poster={movie.poster_path}
+              release={movie.release_date}
+              genres={movie.genres}
+              rating={movie.vote_average}
+              plot={movie.overview}
+              key={movie.title}
+              />
           ))}
-        </ul>
-      </MovieRight>
-    </div>
+        </div>
   )
 }
 

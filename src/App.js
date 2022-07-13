@@ -8,11 +8,12 @@ const App = () => {
       <h1>Movie List</h1>
       {movieArray.map((movie, index) => (
         <Movie
-          key={movie.title}
+          key={movie.id}
           title={movie.title}
           release={movie.release_date}
           overview={movie.overview}
           poster={movie.poster_path}
+          genres={movie.genres}
         />
       ))}
     </div>

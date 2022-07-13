@@ -24,8 +24,14 @@ switch (props.name) {
     case 'Family':
         genreColor = 'brown'
         break
+    case 'Fantasy':
+        genreColor = 'dimgray'
+        break
     case 'Horror':
         genreColor = 'orangered'
+        break
+    case 'Music':
+        genreColor = 'steelblue'
         break
     case 'Mystery':
         genreColor = 'darkmagenta'
@@ -42,10 +48,6 @@ switch (props.name) {
     
     return (
         <div>
-            {/*// EXAMPLE of inline styling without a variable*/}
-            {/* <p style={{ backgroundColor: 'darkslateblue', color: 'rgb(255,255,255)' }} >{props.name}</p> */}
-
-            {/*// EXAMPLE of inline styling WITH a variable*/}
             <p className='color' style={{ backgroundColor: genreColor, color: 'white' }} >{props.name}</p>
         </div>
     )

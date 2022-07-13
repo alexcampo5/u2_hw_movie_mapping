@@ -1,4 +1,7 @@
 .App {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -36,3 +39,14 @@
     transform: rotate(360deg);
   }
 }
+
+img {
+  width: 150px;
+  height: 200px;
+}
+.movies {
+  border: 1px solid black;
+  font-weight: 400;
+}
+
+

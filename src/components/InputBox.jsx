@@ -1,4 +1,9 @@
 const InputBox = () => {
+  const handleClick = () => {
+    const submit = document.getElementById('inputbox').value
+    console.log(submit)
+  }
+
   return (
     <div>
       <label for="inputbox" > Search by Genre: </label >

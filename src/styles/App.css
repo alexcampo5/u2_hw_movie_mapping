@@ -13,6 +13,13 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  width: 430px;
+  justify-self: center;
+  margin-left: 35px;
+  color: black;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

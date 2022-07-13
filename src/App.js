@@ -5,12 +5,7 @@ import InputBox from './components/InputBox'
 
 
 const App = () => {
-  const handleClick = () => {
-    const submit = document.getElementById('inputbox').value
-    console.log(submit)
-  }
-
-
+ 
   return (
     <div className="App">
       <h1>Movie List</h1>
@@ -22,6 +17,7 @@ const App = () => {
               title={movie.title}
               poster={movie.poster_path}
               genres={movie.genres}
+              overview={movie.overview}
               />
             )
               )

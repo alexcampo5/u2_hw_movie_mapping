@@ -5,6 +5,7 @@ const Movie = (props) => {
     <div className="movie">
       <h2>{props.title}</h2>
       <img className="img" src={props.poster} />
+      <h4>{props.overview}</h4>
       {props.genres.map((genre) => (
         <Genre
           key={genre.id}
